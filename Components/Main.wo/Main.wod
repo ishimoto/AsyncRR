@@ -1,0 +1,165 @@
+JQUpdateContainer : AjaxJQUpdateContainer {
+	id = "my_panel";
+}
+
+JQButtonAdd : AjaxJQSubmitButton {
+	updateContainerID = "my_panel";
+	action = actionAdd;
+	value = "add";
+}
+
+JQLinkClear : AjaxJQUpdateLink {
+	updateContainerID = "my_panel";
+	action = actionClear;
+}
+
+MTUpdateContainer : AjaxMTUpdateContainer {
+	id = "my_panel";
+}
+
+MTButtonAdd : AjaxMTSubmitButton {
+	updateContainerID = "my_panel";
+	action = actionAdd;
+	value = "add";
+}
+
+MTLinkClear : AjaxMTUpdateLink {
+	updateContainerID = "my_panel";
+	action = actionClear;
+}
+
+PTUpdateContainer : AjaxPTUpdateContainer {
+	id = "my_panel";
+}
+
+PTButtonAdd : AjaxPTSubmitButton {
+	updateContainerID = "my_panel";
+	action = actionAdd;
+	value = "add";
+}
+
+PTLinkClear : AjaxPTUpdateLink {
+	updateContainerID = "my_panel";
+	action = actionClear;
+}
+
+WonderMTUpdateContainer : MTAjaxUpdateContainer {
+	id = "my_panel";
+}
+
+WonderMTButtonAdd : MTAjaxSubmitButton {
+	updateContainerID = "my_panel";
+	action = actionAdd;
+	value = "add";
+}
+
+WonderMTLinkClear : MTAjaxUpdateLink {
+	updateContainerID = "my_panel";
+	action = actionClear;
+}
+
+WonderPTUpdateContainer : AjaxUpdateContainer {
+	id = "my_panel";
+}
+
+WonderPTButtonAdd : AjaxSubmitButton {
+	updateContainerID = "my_panel";
+	action = actionAdd;
+	value = "add";
+}
+
+WonderPTLinkClear : AjaxUpdateLink {
+	updateContainerID = "my_panel";
+	action = actionClear;
+}
+
+Form : WOForm {
+}
+
+FullString : WOString {
+	value = fullString;
+}
+
+TextAdd : WOTextField {
+	value = addString;
+}
+
+IsTypeJQuery : WOConditional {
+	condition = isTypeJQuery;
+}
+
+IsTypeMooTools : WOConditional {
+	condition = isTypeMooTools;
+}
+
+IsTypePrototype : WOConditional {
+	condition = isTypePrototype;
+}
+
+IsTypeWonderMooTools : WOConditional {
+	condition = isTypeWonderMooTools;
+}
+
+IsTypeWonderPrototype : WOConditional {
+	condition = isTypeWonderPrototype;
+}
+
+Types : WOPopUpButton {
+	list = types;
+	selection = type;
+}
+
+ButtonSelectType : WOSubmitButton {
+	action = actionSelectType;
+	value = "Select Type";
+}
+
+WonderPTObserverOutside : AjaxObserveField {
+	updateContainerID = "my_panel";
+	action = actionFruitOutside;
+}
+
+WonderPTObserverInside : AjaxObserveField {
+	updateContainerID = "my_panel";
+	action = actionFruitInside;
+}
+
+WonderMTObserverOutside : MTAjaxObserveField {
+	updateContainerID = "my_panel";
+	action = actionFruitOutside;
+}
+
+WonderMTObserverInside : MTAjaxObserveField {
+	updateContainerID = "my_panel";
+	action = actionFruitInside;
+}
+
+MTObserverOutside : AjaxMTObserveField {
+	updateContainerID = "my_panel";
+	action = actionFruitOutside;
+}
+
+MTObserverInside : AjaxMTObserveField {
+	updateContainerID = "my_panel";
+	action = actionFruitInside;
+}
+
+PTObserverOutside : AjaxPTObserveField {
+	updateContainerID = "my_panel";
+	action = actionFruitOutside;
+}
+
+PTObserverInside : AjaxPTObserveField {
+	updateContainerID = "my_panel";
+	action = actionFruitInside;
+}
+
+PopupInside : WOPopUpButton {
+	list = fruits;
+	selection = fruitInside;
+}
+
+PopupOutside : WOPopUpButton {
+	list = fruits;
+	selection = fruitOutside;
+}
